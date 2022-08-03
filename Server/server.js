@@ -23,6 +23,6 @@ mongoose.connect(Connection_Url).then(()=>{
 }).catch((err)=>{
     console.log(err)
 })
-
+//controlling other pages
 app.use("/user",UserController)
 app.use("/contact",ContactController)
