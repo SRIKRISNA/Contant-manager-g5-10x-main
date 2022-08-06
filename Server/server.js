@@ -5,13 +5,12 @@ const ContactController = require("./Routes/Contact")
 const UserController = require("./Routes/User")
 require("dotenv").config()
 
-
-
 const app = Express()
 app.use(Express.json({limit:"30mb",extended:true}))
 app.use(cors())
 
-const Connection_Url = "mongodb+srv://yash:yash@app.fmxq6.mongodb.net/ContantManager"
+//mongodb+srv://yash:yash@app.fmxq6.mongodb.net/ContantManager
+const Connection_Url = "mongodb+srv://krishna:spkrishna@krishnacluster.xjap0dj.mongodb.net/contactmanager?retryWrites=true&w=majority"
 const Port = process.env.PORT || 5003;
 
 mongoose.connect(Connection_Url).then(()=>{

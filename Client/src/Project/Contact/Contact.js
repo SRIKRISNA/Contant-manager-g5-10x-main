@@ -11,7 +11,7 @@ const Contact = () => {
   const authToken = localStorage.getItem("authorization");
   useEffect(()=>{
     axios({
-     url:"https://project-server-g5-10x.herokuapp.com/contact",
+     url:"https://contactmanagerserver.herokuapp.com/contact",
      method:"GET",
      headers:{
       authorization: authToken

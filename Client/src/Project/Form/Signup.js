@@ -16,7 +16,7 @@ const Signup = () => {
         if(data.password === data.confirmpassword){
             console.log(data);
              axios({
-                url: "https://project-server-g5-10x.herokuapp.com/user/signup",
+                url: "https://contactmanagerserver.herokuapp.com/user/signup",
                 method: "POST",
                 headers: {
     
